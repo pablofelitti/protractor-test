@@ -1,0 +1,24 @@
+{
+  "segment": "cars",
+  "section": "/gallery/photos/",
+  "table_id": "tdi_TABLE_images",
+  "vehiclesArray": [
+    {"name": "fiesta"},
+    {"name": "focus"},
+    {"name": "fusion"},
+    {"name": "mustang"},
+    {"name": "c-max"},
+    {"name": "taurus"},
+    {"name": "transitconnect"}
+  ],
+  "segmentArray": [
+    {"name": "Cars"},
+    {"name": "Crossovers & SUVs"},
+    {"name": "Trucks & Vans"}
+  ],
+  "sectionSegmentArray": [
+    {"name": "[class='segment cars']"},
+    {"name": "[class='segment crossoversAndSuvs']"},
+    {"name": "[class='segment trucksAndVans']"}
+  ]
+}
