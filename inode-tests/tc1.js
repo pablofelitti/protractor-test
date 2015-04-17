@@ -8,7 +8,7 @@ describe('TC1', function () {
 
     beforeEach(function() {
 
-        //call global 'isAngularSite' function defined within 'pablo-conf.js' to warn protractor that is a page without AngularJS
+        //call global 'isAngularSite' function defined within 'ford-mobile-conf.js' to warn protractor that is a page without AngularJS
         isAngularSite(false);
         browser.ignoreSynchronization = true;
     });
