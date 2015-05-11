@@ -1,8 +1,12 @@
 describe('ford mobile footer page links', function () {
 
-    it('showroom page can be entered', function () {
-
+    beforeEach(function () {
         browser.driver.get(browser.baseUrl);
+        browser.manage().addCookie("MP_LANG", "en", "/", ".ford.com");
+        browser.driver.get(browser.baseUrl);
+    });
+
+    it('showroom page can be entered', function () {
 
         var footer = browser.driver.findElement(by.tagName("footer"));
         var menuList = footer.findElement(by.id("global-large-menu"));
@@ -17,13 +21,11 @@ describe('ford mobile footer page links', function () {
 
         var CAR_SIZE = 11;
 
-        browser.driver.get(browser.baseUrl);
-
         var carsLink = browser.driver.findElement(by.partialLinkText("CARS"));
 
         carsLink.click();
 
-        var cars = browser.driver.findElement(by.css("[data-show=crossovers]"));
+        var cars = browser.driver.findElement(by.css("[data-show=cars]"));
         var carItems = cars.findElements(by.css(".sh-vehicle-item"));
 
         carItems.then(function (carItemsValue) {

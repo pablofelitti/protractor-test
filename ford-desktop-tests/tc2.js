@@ -2,6 +2,8 @@ describe('This test case verifies that each vehicle category displays correctly.
 
     beforeEach(function () {
         browser.driver.get(browser.baseUrl);
+        browser.manage().addCookie("MP_LANG", "en", "/", ".ford.com");
+        browser.driver.get(browser.baseUrl);
     });
 
     it('verify that Cars section is shown only when clicked', function () {
